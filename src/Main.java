@@ -14,13 +14,15 @@ public class Main {
         //Задача 2
         System.out.println("\nЗадача 2");
         int maxPay = 0;
+        int minPay = monthPay[0];
         for (int i : monthPay) {
             if (i > maxPay) {
                 maxPay = i;
+            } else if (i < minPay) {
+                minPay = i;
             }
         }
-        Arrays.sort(monthPay);
-        System.out.println("Минимальная сумма трат за неделю составила " + monthPay[0] + " рублей.");
+        System.out.println("Минимальная сумма трат за неделю составила " + minPay + " рублей.");
         System.out.println("Максимальная сумма трат за неделю составила " + maxPay + " рублей.");
 
         //Задача 3
